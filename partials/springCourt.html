@@ -1,0 +1,11 @@
+
+<h1 class="courtTitle">Spring St. Court</h1>
+<img class="courtPhoto" src="images/springCourt.jpg" alt="">
+
+  <h2 id="h2">Current Status:</h2>
+<div class="update" ng-repeat="courts in vm.court | orderBy : sortComment : true | limitTo: 5">
+<p>{{courts.timestamps | date:'medium'}}<p>
+<h3>{{courts.user}}</h3>
+<h4>{{courts.update}}</h4>
+<hr>
+</div>
